@@ -2,7 +2,7 @@ FROM ubuntu:20.10
 
 RUN apt update && \
     apt upgrade -y && \
-    apt install -y curl openssh-server openjdk15-jdk maven && \
+    apt install -y curl openssh-server openjdk-15-jdk maven && \
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash && \
     \. /root/.nvm/nvm.sh && \
     nvm install --lts && \
